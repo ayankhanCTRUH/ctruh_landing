@@ -1,0 +1,89 @@
+.rightMainContainer {
+  position: relative;
+  pointer-events: none;
+}
+.glass {
+  width: 800px;
+  height: 1000px;
+  backdrop-filter: blur(9px) saturate(180%);
+  -webkit-backdrop-filter: blur(9px) saturate(180%);
+  background-color: rgba(180, 176, 196, 0.39);
+  border-radius: 0 0 0 300px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 20deg;
+  top: -100px;
+  left: 120px;
+}
+.glassInner {
+  rotate: -20deg;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #ffc233;
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  border-radius: 1in;
+  z-index: -2;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.semicircle {
+  width: 120px;
+  height: 60px;
+  border-radius: 150px 150px 0 0;
+  background-color: #386bdd;
+  position: absolute;
+  bottom: 22%;
+  left: 10%;
+  rotate: -25deg;
+  animation-name: floating1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.triangle {
+  background-color: #fdc5f5;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  z-index: -2;
+  top: 70%;
+  left: 90%;
+  rotate: 35deg;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating1 {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(15px, 0);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
