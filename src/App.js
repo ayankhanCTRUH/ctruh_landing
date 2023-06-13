@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import RightPart from "./components/RightPart/RightPart";
 import LeftPart from "./components/LeftPart/LeftPart";
+import Body from "./components/Body/Body";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <RightPart />
         </div>
       </div>
+      <Body />
     </>
   );
 }

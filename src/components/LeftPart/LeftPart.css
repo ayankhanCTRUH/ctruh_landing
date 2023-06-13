@@ -1,8 +1,8 @@
 .leftMainContainer {
-  padding: 11%;
+  padding: 10%;
 }
 .mainHeading {
-  font-size: 80px;
+  font-size: 70px;
   margin: 10px 0;
   color: #313131;
   letter-spacing: 1px;
@@ -36,5 +36,6 @@
 }
 .leftMainContainer p {
   font-size: 18px;
-  color: #313131;
+  color: #444444;
+  margin: 6% 0;
 }
