@@ -3,6 +3,8 @@ import Header from "./components/Header/Header";
 import RightPart from "./components/RightPart/RightPart";
 import LeftPart from "./components/LeftPart/LeftPart";
 import Body from "./components/Body/Body";
+import data from "./data.json";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
           <RightPart />
         </div>
       </div>
-      <Body />
+      <Body data={data.slides} />
+      <Footer />
     </>
   );
 }

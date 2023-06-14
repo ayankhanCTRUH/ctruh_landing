@@ -5,8 +5,8 @@
 .glass {
   width: 800px;
   height: 1000px;
-  backdrop-filter: blur(9px) saturate(180%);
-  -webkit-backdrop-filter: blur(9px) saturate(180%);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
   background-color: rgba(180, 176, 196, 0.39);
   border-radius: 0 0 0 300px;
   position: relative;
@@ -20,14 +20,16 @@
 }
 .glassInner {
   rotate: -20deg;
+  margin-right: 20%;
+  margin-top: 8%;
 }
 .circle {
   width: 150px;
   height: 150px;
   background-color: #ffc233;
   position: absolute;
-  top: 13%;
-  left: 10%;
+  top: -1%;
+  left: 17%;
   border-radius: 1in;
   z-index: -2;
   animation-name: floating;
@@ -56,7 +58,7 @@
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   position: absolute;
   z-index: -2;
-  top: 70%;
+  top: 60%;
   left: 90%;
   rotate: 35deg;
   animation-name: floating;

@@ -1,0 +1,76 @@
+{
+  "leadingText": "All about",
+  "slides": [
+    {
+      "introline": "VR/AR on the Web",
+      "id": "6",
+      "desc": "Elephant ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "content": {
+        "video": "/Apple Vision Pro - Reveal Trailer.mp4",
+        "image": "./4580760.webp"
+      }
+    },
+    {
+      "introline": "Template Library",
+      "desc": "Dog ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "id": "1",
+      "content": {
+        "image": "./web-publishing-7199639-5846527.webp",
+        "video": "/Apple Vision Pro - Reveal Trailer.mp4"
+      }
+    },
+    {
+      "introline": "Spatial Audio",
+      "id": "2",
+      "desc": "Elephant ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "content": {
+        "image": "./audio-book-4147305-3436383@0.webp",
+        "video": "/Apple Vision Pro - Reveal Trailer.mp4"
+      }
+    },
+    {
+      "introline": "Lighting & Backgrounds",
+      "id": "3",
+      "desc": "Bears ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "content": {
+        "image": "./lamp-3260444-2725137.webp",
+        "video": "/Apple Vision Pro - Reveal Trailer.mp4"
+      }
+    },
+    {
+      "introline": "Custom Viewpoints",
+      "id": "4",
+      "desc": "Lizards ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "content": {
+        "image": "./metaverse-3d-icon-png.webp",
+        "video": "/Apple Vision Pro - Reveal Trailer.mp4"
+      }
+    },
+    {
+      "introline": "3rd-Party Integrations",
+      "desc": "Dog ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "id": "5",
+      "content": {
+        "video": "/Apple Vision Pro - Reveal Trailer.mp4",
+        "image": "./complete-setting-6780647-5588582.webp"
+      }
+    },
+    {
+      "introline": "AI Creative Tools",
+      "id": "7",
+      "desc": "Bears ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "content": {
+        "video": "/Apple Vision Pro - Reveal Trailer.mp4",
+        "image": "./ai-brain-5796837-4863005.webp"
+      }
+    },
+    {
+      "introline": "Interactive Metaverse",
+      "id": "8",
+      "desc": "Lizards ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus. ultricies erat a, dapibus lectus.",
+      "content": {
+        "image": "./gaming-controller-5342729-4487251.webp"
+      }
+    }
+  ]
+}

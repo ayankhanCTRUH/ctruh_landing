@@ -1,0 +1,49 @@
+.mainFooterContainer {
+  background-color: #386bdd;
+  padding: 20px;
+  border-radius: 100px 100px 0 0;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footerSectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footerSectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5%;
+}
+
+.footerSectionContainer section {
+  width: 20%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.footerSectionContainer section:first-child img {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.footerSectionContainer section h5 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 17px;
+}
+.footerSectionContainer section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footerSectionContainer section ul li {
+  margin: 12px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
