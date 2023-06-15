@@ -2,11 +2,13 @@ import React from "react";
 import { useState } from "react";
 import cn from "classnames";
 import "./Body.css";
+import { useEffect } from "react";
 // import { ReactComponent as Next } from "./assets/chevronDown.svg";
 // import { ReactComponent as Prev } from "../../assets/chevronUp.svg";
 
 function Body({ data, leadingText }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [clickedNext, setClickedNext] = useState(false);
 
   // Used to determine which items appear above the active item
   const halfwayIndex = Math.ceil(data.length / 2);
@@ -60,7 +62,16 @@ function Body({ data, leadingText }) {
       return prevIndex - 1;
     });
   };
+  const MINUTE_MS = 3000;
+  console.log(clickedNext);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleClick("next");
+      console.log("Logs every minute");
+    }, MINUTE_MS);
 
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  }, []);
   return (
     <>
       <div className="offering">
@@ -75,7 +86,8 @@ function Body({ data, leadingText }) {
             <button
               type="button"
               className="carousel-button prev"
-              onClick={() => handleClick("prev")}
+              onClick={() => (handleClick("prev"), setClickedNext(true))}
+              onPointerLeave={() => setClickedNext(false)}
             >
               <img src="./chevronUp.svg" alt="" />
             </button>

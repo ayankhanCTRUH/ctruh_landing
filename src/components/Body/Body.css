@@ -89,6 +89,7 @@
   color: #313131;
   border-bottom: 1px solid #386bdd;
   padding-bottom: 5px;
+  text-shadow: 10px 0 10px 0 red;
 }
 .contentInner p {
   color: #313131bd;

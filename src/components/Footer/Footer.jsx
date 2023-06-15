@@ -18,6 +18,8 @@ function Footer() {
             <li>Blog</li>
             <li>Contact Us</li>
             <li>Careers</li>
+            <li>Terms of service</li>
+            {/* <li>Privacy policy</li> */}
           </ul>
         </section>
         <section>
@@ -27,12 +29,6 @@ function Footer() {
             <li>Facebook</li>
             <li>twitter</li>
             <li>LinkedIn</li>
-          </ul>
-        </section>
-        <section>
-          <h5 className="sectionHeading">Product</h5>
-          <ul>
-            <li>Ctruh Product</li>
           </ul>
         </section>
       </div>

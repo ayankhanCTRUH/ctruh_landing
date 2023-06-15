@@ -1,0 +1,42 @@
+.bannerMainContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #ffffff, #234fad);
+}
+.bannerMainContainer canvas {
+  width: 100%;
+  height: 100%;
+}
+.bannerText {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 59%;
+  text-align: center;
+}
+.bannerText h1 {
+  color: #fff;
+  font-size: 100px;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 800;
+  text-shadow: 4px 10px 0px #386cdd6b;
+}
+.bannerText p {
+  color: rgb(103, 103, 103);
+  font-size: 18px;
+}
+.bannerText button {
+  border: 0;
+  padding: 10px 20px;
+  background-color: #386bdd;
+  color: white;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 500;
+}

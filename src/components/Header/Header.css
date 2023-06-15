@@ -4,6 +4,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  padding: 20px 30px;
   justify-content: space-between;
   transition: background 0.3s ease-in-out;
   z-index: 9999;
@@ -11,24 +12,30 @@
 .headerWhite {
   background-color: #fff;
 }
-.header_section_one {
+.header_section_one,
+.header_section_one_black {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin-right: 40px;
+  margin-right: 60px;
 }
-.header_section_one nav {
+.header_section_one nav,
+.header_section_one_black nav {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: rgb(82, 81, 81);
+  color: #fff;
   cursor: pointer;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
   transition: border 0.3s ease-in-out;
 }
-.header_section_one nav:last-child {
+.header_section_one_black nav {
+  color: rgb(0, 0, 0);
+}
+.header_section_one nav:last-child,
+.header_section_one_black nav:last-child {
   background-color: #386bdd;
   color: #fff;
   padding: 10px 20px;

@@ -22,10 +22,24 @@ function Header() {
     <header className={scrollPosition > 82 ? "headerWhite" : "header"}>
       <div>
         <nav>
-          <img src="./logo (2).png" width={80} alt="" />
+          <img
+            src={
+              scrollPosition > 82
+                ? "./logo (2).png"
+                : "./ctruh logo - white.png"
+            }
+            width={40}
+            alt=""
+          />
         </nav>
       </div>
-      <div className="header_section_one">
+      <div
+        className={
+          scrollPosition > 82
+            ? "header_section_one_black"
+            : "header_section_one"
+        }
+      >
         <nav>Home</nav>
         <nav>About Us</nav>
         <nav>Pricing</nav>

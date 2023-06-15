@@ -1,23 +1,17 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import RightPart from "./components/RightPart/RightPart";
-import LeftPart from "./components/LeftPart/LeftPart";
 import Body from "./components/Body/Body";
 import data from "./data.json";
 import Footer from "./components/Footer/Footer";
+import Banner from "./components/Banner/Banner";
+import Banner2 from "./components/Banner2/Banner2";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="mainContainer">
-        <div className="leftPartContainer">
-          <LeftPart />
-        </div>
-        <div className="rightPartContainer">
-          <RightPart />
-        </div>
-      </div>
+      <Banner2 />
+      {/* <Banner /> */}
       <Body data={data.slides} />
       <Footer />
     </>

@@ -1,0 +1,19 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+}
+.leftPartContainer {
+  /* background-color: red; */
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightPartContainer {
+  /* background-color: blue; */
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
