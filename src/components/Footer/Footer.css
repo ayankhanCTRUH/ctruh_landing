@@ -47,6 +47,14 @@
   cursor: pointer;
   font-size: 15px;
 }
+.footerSectionContainer section ul li a {
+  border: 0px;
+  text-decoration: none;
+  color: #fff;
+}
+.footerSectionContainer section ul li a:hover {
+  color: rgb(213, 213, 213);
+}
 
 @media only screen and (max-width: 600px) {
   .footerSectionContainer {
