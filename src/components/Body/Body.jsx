@@ -76,9 +76,9 @@ function Body({ data, leadingText }) {
     <>
       <div className="offering">
         <div className="offeringHeader">
-          <div>Meet Ctruh, the Most Intuitive</div>
           <div>
-            <span>3D Editor</span> Around
+            Meet Ctruh, the Most Intuitive
+            <br /> <span>3D Editor</span> Around
           </div>
         </div>
         <div className="offeringBody">

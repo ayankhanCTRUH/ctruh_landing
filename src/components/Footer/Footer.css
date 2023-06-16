@@ -47,3 +47,12 @@
   cursor: pointer;
   font-size: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+  .footerSectionContainer {
+    flex-direction: column;
+  }
+  .footerSectionContainer section {
+    width: 80%;
+  }
+}

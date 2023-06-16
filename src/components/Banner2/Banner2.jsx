@@ -4,12 +4,7 @@ import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import { Float } from "@react-three/drei";
 import { Suspense } from "react";
-import {
-  OrbitControls,
-  ContactShadows,
-  useGLTF,
-  useCursor,
-} from "@react-three/drei";
+import { OrbitControls, useGLTF, useCursor } from "@react-three/drei";
 import "./Banner2.css";
 
 function Stars(props) {
@@ -49,6 +44,14 @@ function Model({ name, ...props }) {
   // Feed hover state into useCursor, which sets document.body.style.cursor to pointer|auto
   const [hovered, setHovered] = useState(false);
   useCursor(hovered);
+  const model = useRef();
+  useFrame((state, delta) => {
+    if (hovered) {
+      model.current.rotation.y -= delta / 1;
+      model.current.rotation.x -= delta / 1;
+      model.current.rotation.z -= delta / 1;
+    }
+  });
   return (
     <>
       <Float
@@ -58,6 +61,7 @@ function Model({ name, ...props }) {
         floatingRange={[1, 10]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
         <mesh
+          ref={model}
           // // Click sets the mesh as the new target
           // onClick={(e) => (e.stopPropagation(), (state.current = name))}
           // // If a click happened but this mesh wasn't hit we null out the target,
@@ -73,8 +77,8 @@ function Model({ name, ...props }) {
           name={name}
           geometry={nodes[name].geometry}
           material={nodes[name].material}
-          material-color={"#afc7fa"}
-          // material-color={snap.current === name ? "#ff6080" : "white"}
+          // material-color={"#afc7fa"}
+          material-color={hovered ? "#7796d9" : "#afc7fa"}
           {...props}
           dispose={null}
         />
@@ -106,8 +110,8 @@ function Banner2() {
         />
         <pointLight position={[100, 100, 100]} intensity={0.8} />
         <hemisphereLight
-          color="#ffffff"
-          groundColor="#b9b9b9"
+          color="#234fad"
+          groundColor="#fff"
           position={[-7, 25, 13]}
           intensity={0.85}
         />

@@ -42,8 +42,8 @@ function Header() {
       >
         <nav>Home</nav>
         <nav>About Us</nav>
-        <nav>Pricing</nav>
-        <nav>Dashboard</nav>
+        <nav>Blogs</nav>
+        <nav>Join Waitlist</nav>
       </div>
     </header>
   );
