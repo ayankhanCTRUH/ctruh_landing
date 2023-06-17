@@ -63,11 +63,9 @@ function Body({ data, leadingText }) {
     });
   };
   const MINUTE_MS = 3000;
-  console.log(clickedNext);
   useEffect(() => {
     const interval = setInterval(() => {
       handleClick("next");
-      console.log("Logs every minute");
     }, MINUTE_MS);
 
     return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.

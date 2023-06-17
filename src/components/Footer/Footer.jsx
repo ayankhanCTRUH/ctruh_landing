@@ -1,7 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import { useState, useEffect } from "react";
 
 function Footer() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
   return (
     <footer className="mainFooterContainer">
       <div className="footerSectionContainer">
@@ -15,7 +21,8 @@ function Footer() {
           <h5 className="sectionHeading">Company</h5>
           <ul>
             <li>
-              <a href="https://www.ctruh.com/aboutus">About</a>
+              <a href="https://www.ctruh.com/aboutus?data=hide">About</a>
+              {/* <a href="https://www.ctruh.com/aboutus?data=hide">About</a> */}
             </li>
             <li>
               <a href="https://www.ctruh.com/blogs">Blog</a>
